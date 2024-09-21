@@ -40,8 +40,10 @@ function Footer() {
           </div>
         </div>
       </CardContent>
-        <CardDescription className='flex items-center justify-center p-2 gap-3 text-xl bg-current'>
-            <p className='text-sm text-accent'>Copyright &copy; {date.getFullYear()} Burundi en Temps Reel. All Right Reserved </p>
+        <CardDescription className='flex flex-col items-center justify-center p-3 gap-1  bg-current'>
+            <p className='text-sm text-accent'> Burundi en Temps Reel &copy; {date.getFullYear()}</p>
+            <p className='text-white/40'> All Right Reserved </p>
+            <p className='text-white/40'>Developed by Ir Masenge,DidoYoungMan,Telecom and Richard </p>
         </CardDescription>
     </Card>
   )
