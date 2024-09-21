@@ -54,7 +54,7 @@ function App() {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }} // Added duration
+                transition={{ duration: 0.5 }} 
               >
                 <Contacts />
               </motion.div>
@@ -67,7 +67,7 @@ function App() {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }} // Added duration
+                transition={{ duration: 0.5 }}
               >
                 <Hebergementweb/>
               </motion.div>
@@ -80,7 +80,7 @@ function App() {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }} // Added duration
+                transition={{ duration: 0.5 }} 
               >
                 <Nomdedomaine/>
               </motion.div>
@@ -93,7 +93,7 @@ function App() {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }} // Added duration
+                transition={{ duration: 0.5 }} 
               >
                 <NotreEquipe/>
               </motion.div>
