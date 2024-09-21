@@ -23,14 +23,14 @@ function NavBar() {
                 </div>
             </div>
                 <nav className=" relative flex items-center justify-center p-0 gap-3 text-xl ">                
-                <Link to="/" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2">< HomeIcon width={20} height={20}/>Acceuil</Link>
-                <Link to="/hebergement-web" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><GlobeIcon width={20} height={20}/> Hebergement</Link>
-                <Link to="/nom-de-domaine" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><ExternalLinkIcon width={20} height={20} />Domaine</Link>
-                <Link to="/services" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><GearIcon width={20} height={20}/>Services</Link>
-                <Link to="/notre-equipe" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><PersonIcon width={20} height={20}/>Notre Equipe</Link>
-                <Link to="/publication" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><Pencil2Icon width={20} height={20}/>Publications</Link>
-                <Link to="/portfolio" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><MyIcon width={20} height={20} />Portfolio</Link>
-                <Link to="/contact" className="hover:bg-primary p-1 rounded-lg hover:text-white duration-300 flex flex-col justify-center items-center gap-2"><Contacts width={20} height={20} />Contacts</Link>
+                <Link to="/" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2">< HomeIcon width={20} height={20}/>Acceuil</Link>
+                <Link to="/hebergement-web" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><GlobeIcon width={20} height={20}/> Hebergement</Link>
+                <Link to="/nom-de-domaine" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><ExternalLinkIcon width={20} height={20} />Domaine</Link>
+                <Link to="/services" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><GearIcon width={20} height={20}/>Services</Link>
+                <Link to="/notre-equipe" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><PersonIcon width={20} height={20}/>Notre Equipe</Link>
+                <Link to="/publication" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><Pencil2Icon width={20} height={20}/>Publications</Link>
+                <Link to="/portfolio" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><MyIcon width={20} height={20} />Portfolio</Link>
+                <Link to="/contact" className="hover:bg-primary p-1 rounded-lg rounded-b-none hover:text-white duration-500 flex flex-col justify-center items-center gap-2"><Contacts width={20} height={20} />Contacts</Link>
                 </nav>
             </CardContent>
         </Card>
