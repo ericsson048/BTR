@@ -62,11 +62,15 @@
 
 @layer base {
   * {
-    @apply border-border;
-    font-family: "Poppins", sans-serif;
+    @apply border-border font-mono;
+    /* font-family: "Poppins", sans-serif; */
     font-style: normal;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #16e186;
   }
 }
