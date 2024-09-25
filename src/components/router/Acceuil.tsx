@@ -1,12 +1,14 @@
 import profile from "../../../public/programming-background-collage.jpg"
-import CardService from "../CardService"
+import CardService, { service } from "../CardService"
 import Mission from "../Mission"
+import ServiceCard from "../ServiceCard"
+
 function Acceuil() {
   return (
     <main className="flex flex-col items-center justify-center w-full">
        <div className="relative w-full h-[80vh] ">
           <img src={profile} alt="profile" className="object-cover w-full h-full"/>
-          <p className="absolute top-28 left-[50%] right-[50%] translate-x-[-50%] w-[80%]  text-center text-outline text-white text-2xl font-extrabold">Burundi en Temps Réel est une entreprise offrant des solutions web personnalisées, incluant la création de sites, le développement d'applications, l'optimisation, et l'hébergement web.
+          <p className="absolute top-10 left-[50%] right-[50%] translate-x-[-50%] w-[80%]  text-center text-outline text-white text-3xl  font-[500]">Burundi en Temps Réel est une entreprise offrant des solutions web personnalisées, incluant la création de sites, le développement d'applications, l'optimisation, et l'hébergement web.
              Elle se distingue par des services sur mesure adaptés aux besoins de ses clients.</p>
             <div className="absolute right-0 left-0 -bottom-1"> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -21,7 +23,7 @@ function Acceuil() {
        </div>
        <div className="w-full flex flex-col justify-center items-center space-y-6 pb-3">
         <p className="w-[65%] text-center text-primary text-4xl font-bold">C'est Quoi Burundi en Temps Reel ?</p>
-        <p className="w-[65%] text-center font-mono">Burundi en temps réel est l'entreprise spécialisée dans le développement de
+        <p className="w-[65%] text-center ">Burundi en temps réel est l'entreprise spécialisée dans le développement de
            solutions web personnalisées offre une gamme complète de services comprenant la création de sites web sur mesure avec des designs
             personnalisés, le développement d'applications web, mobiles et de bureau, ainsi que les services d'optimisation et de maintenance de sites existants
         </p>
@@ -45,6 +47,20 @@ function Acceuil() {
        utilisateur et à offrir des technologies qui favorisent la croissance et l'efficacité des entreprises."
        image="https://www.burundientempsreel.com/image/programming.png"
        />
+       
+      <div className="flex flex-col my-6">
+        <p className="text-center text-primary text-4xl font-bold">Nos Services</p>
+        {service.map((Item, index) => {
+         return (
+         <ServiceCard key={index} 
+         title={Item.name}
+         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis reiciendis quos? Deserunt optio recusandae est obcaecati nam quae deleniti modi autem odio itaque quisquam, eveniet in blanditiis fuga expedita sunt reprehenderit dolorem!"
+         image={Item.image}
+         reserse={index%2===0 ? true : false}
+         />
+         );
+      })}
+      </div>
     </main>
   )
 }

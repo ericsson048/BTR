@@ -22,12 +22,12 @@ function Footer() {
         </div>
         <div className=" w-[75%] flex justify-center items-center gap-5">
           <div className="flex flex-col h-52 w-[350px] p-3">
-            <h1 className='text-foreground'>Autres Liens</h1>
+            <h1 className='text-foreground'>Les Liens</h1>
             <div className='flex flex-col items-start'>
-              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Qui sommes-nous</Link>
-              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Comment ça marche ?</Link>
+              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Hebergement</Link>
+              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Nom du Domaine</Link>
+              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Services</Link>
               <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Conditions d'utilisation</Link>
-              <Link to={"/"} className={"text-foreground text-center p-2 hover:bg-slate-500/10"}>Trouver mes tickets</Link>
             </div>
           </div>
           <div className="flex flex-col h-52 w-[350px] p-3">
@@ -43,7 +43,7 @@ function Footer() {
         <CardDescription className='flex flex-col items-center justify-center p-3 gap-1  bg-current'>
             <p className='text-sm text-accent'> Burundi en Temps Reel &copy; {date.getFullYear()}</p>
             <p className='text-white/40'> All Right Reserved </p>
-            <p className='text-white/40'>Developed by Ir Masenge,DidoYoungMan,Telecom and Richard </p>
+            <p className='text-white/40'>Developed by Ir Masenge,Ericsson,DidoYoungMan,Telecom and Richard </p>
         </CardDescription>
     </Card>
   )
