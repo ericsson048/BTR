@@ -9,7 +9,7 @@ function Acceuil() {
     <main className="flex flex-col items-center justify-center w-full">
        <div className="relative w-full h-[80vh] ">
           <img src={profile} alt="profile" className="object-cover w-full h-full"/>
-          <p className="absolute top-10 left-[50%] right-[50%] translate-x-[-50%] w-[80%]  text-center text-outline text-white text-3xl  font-[500]">Burundi en Temps Réel est une entreprise offrant des solutions web personnalisées, incluant la création de sites, le développement d'applications, l'optimisation, et l'hébergement web.
+          <p className="absolute top-10 left-[50%] right-[50%] translate-x-[-50%] w-[80%]  text-center text-outline italic text-white text-3xl  font-[500]">Burundi en Temps Réel est une entreprise offrant des solutions web personnalisées, incluant la création de sites, le développement d'applications, l'optimisation, et l'hébergement web.
              Elle se distingue par des services sur mesure adaptés aux besoins de ses clients.</p>
             <div className="absolute right-0 left-0 -bottom-1"> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
