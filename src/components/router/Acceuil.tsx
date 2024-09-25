@@ -1,5 +1,6 @@
 import profile from "../../../public/programming-background-collage.jpg"
 import CardService, { service } from "../CardService"
+import FAQ from "../FAQ"
 import Mission from "../Mission"
 import ServiceCard from "../ServiceCard"
 
@@ -61,6 +62,7 @@ function Acceuil() {
          );
       })}
       </div>
+      <FAQ/>
     </main>
   )
 }
