@@ -31,7 +31,7 @@ function CardService() {
     <div className="w-full flex flex-wrap justify-between items-center space-x-2 space-y-6 mb-6 px-6">
         {service.map((item, idx) => {
             return ( 
-                <Card key={idx} className="w-[30%] h-[200px] overflow-hidden">
+                <Card key={idx} className="w-[30%] h-[200px] overflow-hidden ">
                     <CardContent className="w-full h-full p-0 relative ">
                         <img src={item.image} alt={item.name}  className="object-cover" /> 
                         <div className="absolute top-[50%] left-[50%] translate-x-[-50%] w-fit translate-y-[-50%]  px-1 py-3 text-white font-mono rounded-full bg-primary/50 hover:shadow-2xl hover:shadow-black/35">{item.name}</div>

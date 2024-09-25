@@ -1,5 +1,6 @@
 import profile from "../../../public/programming-background-collage.jpg"
 import CardService from "../CardService"
+import Mission from "../Mission"
 function Acceuil() {
   return (
     <main className="flex flex-col items-center justify-center w-full">
@@ -26,6 +27,24 @@ function Acceuil() {
         </p>
        </div>
        <CardService/>
+       <Mission 
+       reverse={false} 
+       title="Notre Mission"
+        description="Chez Burundi en Temps Réel, notre mission est de propulser les entreprises vers l'ère numérique grâce à des solutions web personnalisées
+         et complètes. Nous nous engageons à concevoir des sites web intuitifs, à développer des applications mobiles performantes et à optimiser les solutions
+          existantes. Grâce à nos services d'hébergement fiables et à l'enregistrement de noms de domaine, nous garantissons une présence en ligne solide et durable. 
+          Notre objectif est d'aider nos clients à se démarquer de la concurrence,
+         à atteindre un public élargi et à développer leur activité en toute sérénité."
+         image="https://www.burundientempsreel.com/image/Coursvideoetbibliotheque.png"
+         />
+       <Mission reverse={true}
+       title="Notre Vision"
+       description="Notre vision est de devenir le leader en matière de développement de solutions
+        digitales sur mesure dans la région, en transformant la manière dont les entreprises interagissent avec le monde numérique.
+         Nous aspirons à innover constamment, à enrichir l'expérience 
+       utilisateur et à offrir des technologies qui favorisent la croissance et l'efficacité des entreprises."
+       image="https://www.burundientempsreel.com/image/programming.png"
+       />
     </main>
   )
 }
