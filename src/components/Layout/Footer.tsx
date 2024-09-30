@@ -8,7 +8,7 @@ function Footer() {
     const date = new Date()
   return (
     
-    <Card className='rounded-none'>
+    <Card className='rounded-none max-md:hidden'>
       <CardContent className='flex justify-between items-center shadow p-3'>
         <div className="flex w-[25%] flex-col items-center justify-center gap-4">
           <img src={logo} alt="BTR" className='w-[100px] h-[100px]' />

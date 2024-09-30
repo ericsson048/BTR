@@ -11,6 +11,7 @@ import Services from "./components/router/Services";
 import NavBar from "./components/Layout/NavBar";
 import Footer from "./components/Layout/Footer";
 import { AnimatePresence, motion } from "framer-motion";
+import MobileNav from "./components/Layout/MobileNav";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <>
      <Router>
       <NavBar/>
+      <MobileNav/>
       <AnimatePresence>
         <Routes>
           <Route 

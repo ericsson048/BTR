@@ -7,7 +7,7 @@ import { FaPhone } from 'react-icons/fa';
 
 function NavBar() {
     return (
-        <Card className="rounded-none  " >
+        <Card className="rounded-none  block max-[929px]:hidden">
             <CardContent className="flex flex-col items-center justify-center text-xl p-0 px-6 pt-3 space-y-6">
             <div className="flex justify-between items-center w-full ">
             <div className="flex items-center justify-center gap-2">
