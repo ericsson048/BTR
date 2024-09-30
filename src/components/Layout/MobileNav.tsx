@@ -7,7 +7,8 @@ import {
   } from "@/components/ui/popover"
 // import { FaPhone } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import { Button, buttonVariants } from "../ui/button"
+import { buttonVariants } from "../ui/button"
+import login from "../../../public/login.png"
 import { ExternalLinkIcon, GearIcon, HomeIcon, Pencil2Icon, PersonIcon } from "@radix-ui/react-icons"
 import {
     Sheet,
@@ -36,7 +37,7 @@ function MobileNav() {
         <div className="w-fit py-3 px-6 flex gap-3">
         <Popover>
       <PopoverTrigger asChild>
-        <Button>on</Button>
+        <img src={login} alt="login" />
       </PopoverTrigger>
       <PopoverContent className="w-fit flex gap-3 bg-card">
         <Link to ="/" className={buttonVariants({variant:"outline"})+"border border-black transform hover:scale-105 duration-1000"}>Login</Link>
@@ -44,7 +45,7 @@ function MobileNav() {
         </PopoverContent>
         </Popover>
         <Sheet>
-            <SheetTrigger asChild><MenuNav width={35} height={35} /></SheetTrigger>
+            <SheetTrigger asChild><MenuNav width={45} height={45} /></SheetTrigger>
             <SheetContent side={"left"}>
                 <SheetHeader>
                     <SheetTitle>

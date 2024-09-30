@@ -8,9 +8,9 @@ function Footer() {
     const date = new Date()
   return (
     
-    <Card className='rounded-none max-md:hidden'>
-      <CardContent className='flex justify-between items-center shadow p-3'>
-        <div className="flex w-[25%] flex-col items-center justify-center gap-4">
+    <Card className='rounded-none'>
+      <CardContent className='flex justify-between items-center shadow p-3 max-md:flex-col max-md:items-start max-md:gap-3'>
+        <div className="flex w-[25%] flex-col items-center justify-center gap-4 max-md:w-[350px]">
           <img src={logo} alt="BTR" className='w-[100px] h-[100px]' />
           <div className="flex gap-3">
             <Link to={"/"} className='text-black border p-3 rounded-full hover:bg-primary hover:text-white duration-700'><FaGithub/></Link>
@@ -20,7 +20,7 @@ function Footer() {
           </div>
           <Link to={"/contact"} className={"rounded-full w-[65%] border text-center p-2 hover:bg-primary hover:text-white duration-700"}>Contactez-Nous</Link>
         </div>
-        <div className=" w-[75%] flex justify-center items-center gap-5">
+        <div className=" w-[75%] flex justify-center items-center gap-5 max-md:w-full max-sm:flex-col max-sm:items-start">
           <div className="flex flex-col h-52 w-[350px] p-3">
             <h1 className='text-foreground'>Les Liens</h1>
             <div className='flex flex-col items-start'>
@@ -43,7 +43,7 @@ function Footer() {
         <CardDescription className='flex flex-col items-center justify-center p-3 gap-1  bg-current'>
             <p className='text-sm text-accent'> Burundi en Temps Reel &copy; {date.getFullYear()}</p>
             <p className='text-white/40'> All Right Reserved </p>
-            <p className='text-white/40'>Developed by Ir Masenge,Ericsson,DidoYoungMan,Telecom and Richard </p>
+            <p className='text-white/40 max-sm:text-sm'>Developed by Ir Masenge,Ericsson,DidoYoungMan,Telecom and Richard </p>
         </CardDescription>
     </Card>
   )
