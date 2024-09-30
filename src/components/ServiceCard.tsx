@@ -12,7 +12,7 @@ function ServiceCard({image, title, reserse, description}: ServiceCardProps) {
     <div className='p-6 w-full flex flex-col items-center space-y-3'>
     <div className={`flex justify-center ${reserse ? 'flex-row-reverse' : ''}  max-md:flex-col-reverse`}>
         <div className='w-[45%] p-4 px-12  flex flex-col space-y-5 max-md:w-full  max-sm:px-3'>
-        <h1 className='text-4xl font-bold text-center text-primary'>{title}</h1>
+        <h1 className='text-4xl font-bold text-center text-primary/85'>{title}</h1>
         <p className='w-full text-start'>{description}</p>
         <Link to={"/"} className="py-3 px-6 bg-primary w-fit rounded-full">Visite la page</Link>
         </div>
