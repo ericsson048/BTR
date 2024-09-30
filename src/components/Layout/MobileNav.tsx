@@ -25,7 +25,7 @@ import { FaPhone } from "react-icons/fa"
 
 function MobileNav() {
   return (
-    <Card className="rounded-none  hidden max-[929px]:block rounded-b-lg">
+    <Card className="rounded-none  hidden max-[929px]:block rounded-b-lg bg-slate-500">
     <CardContent className="flex flex-col items-center justify-center text-xl p-0 px-6 pt-3 space-y-6 rounded-b-lg">
     <div className="flex justify-between items-center w-full">
         <div className="flex items-center justify-center gap-2">
