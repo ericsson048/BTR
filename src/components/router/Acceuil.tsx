@@ -22,7 +22,7 @@ function Acceuil() {
                 </svg> 
             </div>
        </div>
-       <div className="hidden">
+       <div className="max-[996px]:hidden">
        <div className="w-full flex flex-col justify-center items-center space-y-6 pb-3">
         <p className="w-[65%] text-center text-primary text-4xl font-bold">C'est Quoi Burundi en Temps Reel ?</p>
         <p className="w-[65%] text-center ">Burundi en temps réel est l'entreprise spécialisée dans le développement de
