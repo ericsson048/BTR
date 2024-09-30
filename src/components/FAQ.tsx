@@ -7,8 +7,8 @@ import {
 
 function FAQ() {
   return (
-    <div className="w-full flex flex-col items-center justify-between p-20">
-        <h1 className='text-4xl font-bold text-center text-primary'>Question & Reponse</h1>
+    <div className="w-full flex flex-col items-center justify-between p-20 max-md:px-14 max-sm:px-5">
+        <h1 className='text-4xl font-bold text-center text-primary max-sm:text-2xl'>Question & Reponse</h1>
         <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
             <AccordionTrigger className="text-xl">C'est quoi le Burundi en temps réel ?</AccordionTrigger>
