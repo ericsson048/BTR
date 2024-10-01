@@ -70,7 +70,7 @@ function MobileNav() {
                               <Link
                                 key={link}
                                 to={link}
-                                className="hover:bg-primary w-[80%] py-3 px-6 justify-start rounded-lg hover:text-white duration-500 flex items-center gap-2"
+                                className="hover:bg-primary w-[90%] py-3 px-6 justify-start rounded-lg hover:text-white duration-500 flex items-center gap-2"
                               >
                                 <Icon width={34} height={34} />
                                 {label}
