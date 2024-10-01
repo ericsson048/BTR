@@ -5,7 +5,6 @@ import {
     PopoverContent,
     PopoverTrigger,
   } from "@/components/ui/popover"
-// import { FaPhone } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import { buttonVariants } from "../ui/button"
 import login from "../../../public/login.png"
@@ -24,6 +23,17 @@ import { FaPhone } from "react-icons/fa"
 
 
 function MobileNav() {
+
+  const links = [
+    { link: "/", label: "Accueil", Icon: HomeIcon },
+    { link: "/hebergement-web", label: "Hebergement", Icon: Hebergement },
+    { link: "/nom-de-domaine", label: "Domaine", Icon: ExternalLinkIcon },
+    { link: "/services", label: "Services", Icon: GearIcon },
+    { link: "/notre-equipe", label: "Notre Equipe", Icon: PersonIcon },
+    { link: "/publication", label: "Publications", Icon: Pencil2Icon },
+    { link: "/portfolio", label: "Portfolio", Icon: MyIcon },
+    { link: "/contact", label: "Contacts", Icon: Contacts },
+  ];
   return (
     <Card className="rounded-none  hidden max-[929px]:block rounded-b-lg">
     <CardContent className="flex flex-col items-center justify-center text-xl p-0 px-6 pt-3 space-y-6 rounded-b-lg">
@@ -56,14 +66,16 @@ function MobileNav() {
                     </SheetTitle>
                     <SheetDescription>
                          <nav className=" relative flex flex-col items-center justify-between w-full p-0 gap-3 text-xl max-sm:text-sm text-black">                
-                        <Link to="/" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  text-xl items-center gap-2">< HomeIcon width={34} height={34}/>Acceuil</Link>
-                        <Link to="/hebergement-web" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><Hebergement width={34} height={34}/> Hebergement</Link>
-                        <Link to="/nom-de-domaine" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><ExternalLinkIcon width={34} height={34} />Domaine</Link>
-                        <Link to="/services" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><GearIcon width={34} height={34}/>Services</Link>
-                        <Link to="/notre-equipe" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><PersonIcon width={34} height={34}/>Notre Equipe</Link>
-                        <Link to="/publication" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><Pencil2Icon width={34} height={34}/>Publications</Link>
-                        <Link to="/portfolio" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><MyIcon width={34} height={34} />Portfolio</Link>
-                        <Link to="/contact" className="hover:bg-primary w-[80%]  py-3 px-6 justify-start rounded-lg  hover:text-white duration-500 flex  items-center gap-2"><Contacts width={34} height={34} />Contacts</Link>
+                            {links.map(({ link, label, Icon }) => (
+                              <Link
+                                key={link}
+                                to={link}
+                                className="hover:bg-primary w-[80%] py-3 px-6 justify-start rounded-lg hover:text-white duration-500 flex items-center gap-2"
+                              >
+                                <Icon width={34} height={34} />
+                                {label}
+                              </Link>
+                            ))}
                         </nav>
                 </SheetDescription>
                 <a href="tel:+25777576860" className="flex gap-3 text-2xl py-3 px-6 justify-center items-center hover:bg-slate-500/10 max-sm:text-xl">
