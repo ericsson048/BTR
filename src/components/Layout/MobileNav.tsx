@@ -11,6 +11,7 @@ import login from "../../../public/login.png"
 import { ExternalLinkIcon, GearIcon, HomeIcon, Pencil2Icon, PersonIcon } from "@radix-ui/react-icons"
 import {
     Sheet,
+    SheetClose,
     SheetContent,
     SheetDescription,
     SheetHeader,
@@ -67,14 +68,15 @@ function MobileNav() {
                     <SheetDescription>
                          <nav className=" relative flex flex-col items-center justify-between w-full p-0 gap-3 text-xl max-sm:text-sm text-black">                
                             {links.map(({ link, label, Icon }) => (
+                              <SheetClose key={link} asChild>
                               <Link
-                                key={link}
                                 to={link}
                                 className="hover:bg-primary w-[90%] py-3 px-6 justify-start rounded-lg hover:text-white duration-500 flex items-center gap-2"
                               >
                                 <Icon width={34} height={34} />
                                 {label}
                               </Link>
+                              </SheetClose>
                             ))}
                         </nav>
                 </SheetDescription>
