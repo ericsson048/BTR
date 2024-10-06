@@ -43,7 +43,7 @@ function Footer() {
         <CardDescription className='flex flex-col items-center justify-center p-3 gap-1  bg-current'>
             <p className='text-sm text-accent'> Burundi en Temps Reel &copy; {date.getFullYear()}</p>
             <p className='text-white/40'> All Right Reserved </p>
-            <p className='text-white/40 max-sm:text-sm max-[400px]:text-[8px]'>Developed by Ir Masenge,Ericsson,DidoYoungMan,Telecom and Richard </p>
+            <p className='text-white/40 max-sm:text-sm max-[400px]:text-[8px]'>Developed by Ericsson Ishaka </p>
         </CardDescription>
     </Card>
   )
