@@ -68,7 +68,7 @@ function Hebergementweb() {
       <PriceDisplay/>
       <div className="flex flex-col gap-3">
       <button className="py-3 px-4 w-fit text-lg font-bold text-white bg-primary hover:bg-primary/80">Voir nos offres</button>
-      <p className="text-lg flex gap-1 items-center bg-card py-3 px-5"><img src="https://www.lws.fr/_ui/images/theme2021/svg/check_bleu_petit.svg" className="w-4 h-5" alt="" />Satisfait ou remboursé 30 jours</p>
+      <p className="text-[1rem] flex gap-1 items-center bg-card py-3 px-5"><img src="https://www.lws.fr/_ui/images/theme2021/svg/check_bleu_petit.svg" className="w-4 h-5" alt="" />Votre satisfaction est notre priorite</p>
         
       </div>
     </div>
