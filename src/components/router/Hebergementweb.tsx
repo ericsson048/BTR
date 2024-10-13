@@ -1,7 +1,46 @@
 import url from "../../../public/banniere_hebergement_rentree.webp"
 import burundi from '../../../public/Burundi.png'
+import PriceCard from "../PriceCard";
 import PriceDisplay from "../PriceDisplay"
 function Hebergementweb() {
+
+  const offers = [
+    {
+      title: 'BTR Perso',
+      subtitle: 'Idéal pour démarrer votre site rapidement et pour les débutants',
+      oldPrice: '2,99 €',
+      newPrice: '1,49',
+      discount: '-50%',
+      ttcPrice: '1,79 €',
+      features: ['1 Site web', '100 Go de stockage SSD NVMe', '1 base de données MySQL','Trafic illimité',],
+      featuresS:[  '1 nom de domaine', '10 adresses email pro', 'Certificat SSL (https)',],
+      featuresT:[ 'Sauvegardes gratuites'],
+    },
+    {
+      title: 'BTR Starter',
+      subtitle: 'Tout ce dont vous avez besoin pour créer votre site web',
+      oldPrice: '4,99 €',
+      newPrice: '3,49',
+      discount: '-30%',
+      ttcPrice: '4,19 €',
+      features: ['5 Sites web', '250 Go de stockage SSD NVMe', '25 bases de données MySQL', 'Trafic illimité', ],
+      featuresS:[ '1 nom de domaine', '150 adresses email pro', 'Certificat SSL (https)',],
+      featuresT:[ 'Sauvegardes gratuites'],
+      isBestSeller: true,
+    },
+    {
+      title: 'BTR Performance',
+      subtitle: 'Ressources doublées, idéal site d\'entreprise, agences web, ecommerce',
+      oldPrice: '10,99 €',
+      newPrice: '9,99',
+      discount: '-9%',
+      ttcPrice: '11,99 €',
+      features: ['Sites web illimités', 'Espace disque SSD NVMe illimité', 'Bases de données MySQL illimitées', 'Trafic illimité',],
+      featuresS:[  '2 noms de domaine', 'Adresses email pro illimitées', 'Certificat SSL (https)'],
+      featuresT:[ 'Sauvegardes gratuites', 'Assistance prioritaire'],
+    }
+  ];
+
   return (
     <main className="flex flex-col justify-between">
 <div
@@ -50,8 +89,12 @@ function Hebergementweb() {
   </div>
 </div>
 
-      Hebergementweb
-      </main>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+      {offers.map((offer, index) => (
+        <PriceCard key={index} {...offer} />
+      ))}
+    </div>
+</main>
   )
 }
 
