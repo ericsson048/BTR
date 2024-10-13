@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .custom-before{
+    width: 15px;
+    height: 10px;
+    background-image: url("https://www.lws.fr/_ui/images/theme2021/svg/check_clair.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
