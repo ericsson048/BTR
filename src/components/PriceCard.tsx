@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGift } from 'react-icons/fa';
+import { MdSecurity } from 'react-icons/md';
 
 type PriceCardProps = {
   title?: string;
@@ -71,7 +72,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
           <div className="border-t border-slate-400 gap-3 space-y-3 py-6">
           {featuresT.map((feature, index) => (
             <li key={index} className="flex items-center space-x-2">
-              <span>{feature}</span>
+              <MdSecurity className="text-xl text-green-500" /><span>{feature}</span>
             </li>
           ))}
           </div>
