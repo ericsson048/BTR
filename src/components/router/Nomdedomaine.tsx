@@ -1,7 +1,6 @@
-
 function Nomdedomaine() {
   return (
-    <div>Nomdedomaine</div>
+    <main>nom</main>
   )
 }
 
