@@ -68,7 +68,7 @@ const DomainPricingTable = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Browse extensions by category</h1>
+      <h1 className="text-xl font-bold mb-4">Parcourir les extensions par catégorie</h1>
 
       {/* Category Tags */}
       <div className="flex space-x-2 mb-4">
