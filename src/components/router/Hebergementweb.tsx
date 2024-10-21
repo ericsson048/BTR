@@ -146,13 +146,13 @@ function Hebergementweb() {
     </div>
 
     <div className="flex flex-col justify-center items-center w-full h-fit gap-3 space-y-4 my-3 py-3">
-      <h1 className="text-4xl font-extrabold text-center">Hébergement web de qualité</h1>
+      <h1 className="text-4xl font-extrabold text-center text-primary">Hébergement web de qualité</h1>
       <div className="flex flex-wrap justify-center items-center gap-3 space-x-3 w-full p-3 ">
         {hebergement2.map((itm,idx)=>{
           return(
             <div className="flex flex-col justify-center items-center gap-2 space-y-2 w-[30%] max-w-[30%] p-1" key={idx}>
           <img src={itm.img} alt="" className="w-16 h-16" />
-          <h1 className="text-xl font-extrabold text-center">{itm.title}</h1>
+          <h1 className="text-xl font-extrabold text-center text-primary">{itm.title}</h1>
           <p className="text-gray-500 text-center">
           {itm.description}
           </p>
